@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<meta content="inspiration, music, image" name="keywords" />
+
+<meta content="Get inspired with music and image!" name="description" />
+
+<meta name="author"       content="Cássio Oliveira - cassioso@gmail.com" />
+
+
+
+<!-- Droid Sans Font -->
+
+<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel='stylesheet' type='text/css'>
+
+
+
+<title>HeyHye</title>
+
+
+
+<!-- External js imports -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="hh.js"></script>
+
+
+
+<!--[if IE]>
+
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+
+
+
+<style>
+
+html { 
+
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+
+	-webkit-background-size: cover;
+
+	-moz-background-size: cover;
+
+	-o-background-size: cover;
+
+	background-size: cover;
+
+
+
+	height: 100%;
+
+	font-family: 'Droid Sans', sans-serif;
+
+	overflow-x: hidden;
+
+	overflow-y: scroll;
+
+	max-height: 100%;
+
+	text-align: center;
+
+	text-shadow: 0px 1px 1px white;
+
+}
+
+
+
+      
+
+.image{
+
+	max-width: 75%;
+
+    padding:1px;
+
+    border:1px solid gray;
+
+}
+
+
+
+.bg{
+
+	background-color: white;
+
+	filter:alpha(opacity=90);
+
+	-moz-opacity: 0.9; 
+
+	opacity: 0.9; 
+
+}
+
+
+
+#about {
+
+	position: fixed;
+
+	bottom: 5px;
+
+	left: 5px;
+
+	text-align: left;
+
+	padding: 5px;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body onload='randomize();'>
+
+    
+
+    <div id="fb-root"></div>
+
+    <script>(function(d, s, id) {
+
+             var js, fjs = d.getElementsByTagName(s)[0];
+
+             if (d.getElementById(id)) return;
+
+             js = d.createElement(s); js.id = id;
+
+             js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=100915036746957";
+
+             fjs.parentNode.insertBefore(js, fjs);
+
+             }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div class="bg">
+
+	<span style="font-size:large;">
+
+		New inspiration pill: <a href="javascript:randomizeMusic();"><b>m</b>usic</a> | <a href="javascript:randomizeImage();"><b>i</b>mage</a> | <a href="javascript:randomize();"><b>b</b>oth</a>
+
+	</span>
+
+    <hr />
+
+	<div id="music" style="display:inline;"></div>
+
+</div>
+
+
+
+<br />
+
+
+
+<div id="about" class="bg">
+
+	<br /><br />
+
+	Contact <a href="http://cassio.so/" target="new">cassio.so</a>
+
+	<br />
+
+	Thanks to <a href="http://www.jamendo.com/" target="new">Jamendo</a> and <a href="http://www.wikimedia.org" target="new">Wikimedia</a>
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
+
